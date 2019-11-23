@@ -15,4 +15,9 @@ washington.csv
 ### Credits
 Udacity Classroom
 
+### Library
+Numpy
+Pandas
+
+
 
