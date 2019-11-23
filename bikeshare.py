@@ -8,6 +8,7 @@ import time
 #new_york_city = 'new_york_city.csv'
 #washington = 'washington.csv'
 
+print("----------CITIES DATA----------")
 print("----------lets explore bikeshare data----------")
 def get_city():
     print("_" * 50)
