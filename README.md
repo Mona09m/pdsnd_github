@@ -19,5 +19,10 @@ Udacity Classroom
 Numpy
 Pandas
 
+### Sources
+Youtube Channels
+Google search
+
+
 
 
