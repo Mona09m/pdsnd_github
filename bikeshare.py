@@ -8,8 +8,9 @@ import time
 #new_york_city = 'new_york_city.csv'
 #washington = 'washington.csv'
 
-
+print("----------lets explore bikeshare data----------")
 def get_city():
+    print("_" * 50)
     '''Asks the user for a city and returns the filename for that city's bike share data.
     Args:
         none.
@@ -33,6 +34,7 @@ def get_city():
              
 
 def get_time_period():
+    print("_" * 50)
     '''Asks the user for a time period and returns the specified filter.
     Args:
         none.
@@ -48,6 +50,7 @@ def get_time_period():
     return time_period
 
 def get_month():
+    print("_" * 50)
     '''Asks the user for a month and returns the specified month.
     Args:
         none.
@@ -67,6 +70,7 @@ def get_month():
     return ('2017-{}'.format(month), '2017-{}'.format(month + 1))
 
 def get_day():
+    print("_" * 50)
     '''Asks the user for a day and returns the specified day.
     Args:
         none.
@@ -96,6 +100,7 @@ def get_day():
     return (str(start_date), str(end_date))
 
 def popular_month(df):
+    print("_" * 50)
     '''Finds and prints the most popular month for start time.
     Args:
         bikeshare dataframe
@@ -108,6 +113,7 @@ def popular_month(df):
     print('The most popular month is {}.'.format(most_pop_month))
 
 def popular_day(df):
+    print("_" * 50)
     '''Finds and prints the most popular day of week (Monday, Tuesday, etc.) for start time.
     Args:
         bikeshare dataframe
@@ -121,6 +127,7 @@ def popular_day(df):
     print('The most popular day of week for start time is {}.'.format(most_pop_day))
 
 def popular_hour(df):
+    print("_" * 50)
     '''Finds and prints the most popular hour of day for start time.
     Args:
         bikeshare dataframe
@@ -140,6 +147,7 @@ def popular_hour(df):
     print('The most popular hour of day for start time is {}{}.'.format(pop_hour_readable, am_pm))
 
 def trip_duration(df):
+    print("_" * 50)
     '''Finds and prints the total trip duration and average trip duration in
        hours, minutes, and seconds.
     Args:
@@ -162,6 +170,7 @@ def trip_duration(df):
         print('The average trip duration is {} minutes and {} seconds.'.format(m, s))
 
 def popular_stations(df):
+    print("_" * 50)
     '''Finds and prints the most popular start station and most popular end station.
     Args:
         bikeshare dataframe
@@ -174,6 +183,7 @@ def popular_stations(df):
     print('The most popular end station is {}.'.format(pop_end))
 
 def popular_trip(df):
+    print("_" * 50)
     '''Finds and prints the most popular trip.
     Args:
         bikeshare dataframe
@@ -185,6 +195,7 @@ def popular_trip(df):
     print('The most popular trip is {}.'.format(most_pop_trip))
 
 def users(df):
+    print("_" * 50) 
     '''Finds and prints the counts of each user type.
     Args:
         bikeshare dataframe
@@ -196,6 +207,7 @@ def users(df):
     print('There are {} Subscribers and {} Customers.'.format(subs, cust))
 
 def gender(df):
+    print("_" * 50)
     '''Finds and prints the counts of gender.
     Args:
         bikeshare dataframe
@@ -207,6 +219,7 @@ def gender(df):
     print('There are {} male users and {} female users.'.format(male_count, female_count))
 
 def birth_years(df):
+    print("_" * 50)
     ''' Finds and prints the earliest (i.e. oldest user), most recent (i.e. 
         youngest user), and most popular birth years.
     Args:
@@ -221,6 +234,7 @@ def birth_years(df):
           '\nThe most popular birth year is {}.'.format(earliest, latest, mode))
 
 def display_data(df):
+    print("_" * 50)
     '''Displays five lines of data if the user specifies that they would like to.
     After displaying five lines, ask the user if they would like to see five more,
     continuing asking until they say stop.
@@ -230,6 +244,7 @@ def display_data(df):
         none
     '''
     def is_valid(display):
+        print("_" * 50)
         if display.lower() in ['yes', 'no']:
             return True
         else:
@@ -270,6 +285,7 @@ def display_data(df):
 
 
 def statistics():
+    print("_" * 50)
     '''Calculates and prints out the descriptive statistics about a city and
     time period specified by the user via raw input.
     Args:
